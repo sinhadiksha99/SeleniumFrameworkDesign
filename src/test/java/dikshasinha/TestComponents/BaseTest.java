@@ -14,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 
@@ -38,7 +39,9 @@ public class BaseTest {
 		String browserFromProperties = prop.getProperty("browser");;
 		String browserName = browserFromTerminal!=null? browserFromTerminal: browserFromProperties;
 		if(browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			driver = new ChromeDriver(options);
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		}
