@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="dikshasinha.tests.ErrorValidationTest" class="method navigator-link" hash-for-method="productErrorValidation">productErrorValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="dikshasinha.tests.ErrorValidationTest" class="method navigator-link" hash-for-method="loginErrorValidation">loginErrorValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -141,12 +141,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="dikshasinha.tests.ErrorValidationTest" class="method navigator-link" hash-for-method="loginErrorValidation">loginErrorValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="dikshasinha.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="orderHistoryTest">orderHistoryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="dikshasinha.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="orderHistoryTest">orderHistoryTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="dikshasinha.tests.ErrorValidationTest" class="method navigator-link" hash-for-method="productErrorValidation">productErrorValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -169,13 +169,27 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="productErrorValidation">
-                  </a> <!-- productErrorValidation -->
-                  <span class="method-name">productErrorValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at dikshasinha.tests.ErrorValidationTest.productErrorValidation(ErrorValidationTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 29 stack frames
+                  <a name="loginErrorValidation">
+                  </a> <!-- loginErrorValidation -->
+                  <span class="method-name">loginErrorValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: [class*=&apos;flyInOut&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;flyInOut&apos;]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /var/folders/zr/r4xb7s195wn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52818}, goog:processID: 11143, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8b5c01af30095ea45ff24df7ef12c51
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at dikshasinha.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:33)
+	at dikshsinha.pageObjects.ProductCataloguePage.getErrorMsg(ProductCataloguePage.java:55)
+	at dikshasinha.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:17)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -192,10 +206,26 @@
                   <a name="productErrorValidation">
                   </a> <!-- productErrorValidation -->
                   <span class="method-name">productErrorValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at dikshasinha.tests.ErrorValidationTest.productErrorValidation(ErrorValidationTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 29 stack frames
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: .mb-3, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.mb-3&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /var/folders/zr/r4xb7s195wn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52818}, goog:processID: 11143, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8b5c01af30095ea45ff24df7ef12c51
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at dikshasinha.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:33)
+	at dikshsinha.pageObjects.ProductCataloguePage.getProductList(ProductCataloguePage.java:35)
+	at dikshsinha.pageObjects.ProductCataloguePage.getProductByName(ProductCataloguePage.java:40)
+	at dikshsinha.pageObjects.ProductCataloguePage.addProductToCart(ProductCataloguePage.java:48)
+	at dikshasinha.tests.ErrorValidationTest.productErrorValidation(ErrorValidationTest.java:26)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -240,9 +270,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginErrorValidation">
-                  </a> <!-- loginErrorValidation -->
-                  <span class="method-name">loginErrorValidation</span>
+                  <a name="productErrorValidation">
+                  </a> <!-- productErrorValidation -->
+                  <span class="method-name">productErrorValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,16 +286,16 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;dikshasinha.TestComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Submit Order&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Submit Order&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;dikshasinha.tests.SubmitOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Submit Order --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Error validations Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Error validations Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;dikshasinha.tests.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -324,34 +354,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAndaddtoCart')
-data.setCell(0, 2, 'dikshasinha.tests.SubmitOrderTest')
-data.setCell(0, 3, 7017);
+data.setCell(0, 1, 'productErrorValidation')
+data.setCell(0, 2, 'dikshasinha.tests.ErrorValidationTest')
+data.setCell(0, 3, 15319);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginAndaddtoCart')
-data.setCell(1, 2, 'dikshasinha.tests.SubmitOrderTest')
-data.setCell(1, 3, 6854);
+data.setCell(1, 1, 'loginErrorValidation')
+data.setCell(1, 2, 'dikshasinha.tests.ErrorValidationTest')
+data.setCell(1, 3, 10229);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'productErrorValidation')
-data.setCell(2, 2, 'dikshasinha.tests.ErrorValidationTest')
-data.setCell(2, 3, 3289);
+data.setCell(2, 1, 'loginAndaddtoCart')
+data.setCell(2, 2, 'dikshasinha.tests.SubmitOrderTest')
+data.setCell(2, 3, 6968);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'productErrorValidation')
-data.setCell(3, 2, 'dikshasinha.tests.ErrorValidationTest')
-data.setCell(3, 3, 2461);
+data.setCell(3, 1, 'loginAndaddtoCart')
+data.setCell(3, 2, 'dikshasinha.tests.SubmitOrderTest')
+data.setCell(3, 3, 6910);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginErrorValidation')
+data.setCell(4, 1, 'productErrorValidation')
 data.setCell(4, 2, 'dikshasinha.tests.ErrorValidationTest')
-data.setCell(4, 3, 787);
+data.setCell(4, 3, 3295);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'orderHistoryTest')
 data.setCell(5, 2, 'dikshasinha.tests.SubmitOrderTest')
-data.setCell(5, 3, 596);
+data.setCell(5, 3, 666);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -384,76 +414,78 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAndaddtoCart({prod2=ZARA COAT 3, prod1=ADIDAS ORIGINAL})</span>
-                <span class="method-start">1588 ms</span>
+                <span class="method-start">8358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8608 ms</span>
+                <span class="method-start">15329 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">8678 ms</span>
+                <span class="method-start">15391 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAndaddtoCart({prod2=ZARA COAT 3, prod1=ADIDAS ORIGINAL})</span>
-                <span class="method-start">10319 ms</span>
+                <span class="method-start">22967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17174 ms</span>
+                <span class="method-start">29877 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">17248 ms</span>
+                <span class="method-start">29941 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">orderHistoryTest</span>
-                <span class="method-start">18810 ms</span>
+                <span class="method-start">34621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19407 ms</span>
+                <span class="method-start">35288 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dikshasinha.tests.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">19601 ms</span>
+                <span class="method-start">35485 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginErrorValidation</span>
-                <span class="method-start">21159 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21947 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">22021 ms</span>
+                <span class="method-start">35485 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productErrorValidation</span>
-                <span class="method-start">23301 ms</span>
+                <span class="method-start">38784 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25763 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">25829 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">productErrorValidation</span>
-                <span class="method-start">27398 ms</span>
+                <span class="method-name">loginErrorValidation</span>
+                <span class="method-start">38842 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30849 ms</span>
+                <span class="method-start">54104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54302 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">54331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productErrorValidation</span>
+                <span class="method-start">59799 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63095 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
