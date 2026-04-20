@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dikshasinha.tests.SubmitOrderTest">
+      <class name="dikshasinha.tests.TestSample">
         <methods>
-          <include name="launchApplication"/>
-          <include name="loginAndaddtoCart" invocation-numbers="0"/>
-          <include name="tearDown"/>
+          <include name="myTest"/>
         </methods>
-      </class> <!-- dikshasinha.tests.SubmitOrderTest -->
+      </class> <!-- dikshasinha.tests.TestSample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

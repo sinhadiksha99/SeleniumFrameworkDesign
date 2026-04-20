@@ -8,79 +8,40 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Submit Order</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">35,425</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Error validations Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">27,673</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">63,098</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">278</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Submit Order &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">dikshasinha.tests.SubmitOrderTest</td><td><a href="#m0">loginAndaddtoCart</a></td><td rowspan="2">1776356793255</td><td rowspan="2">6910</td></tr><tr class="passedeven"><td><a href="#m1">loginAndaddtoCart</a></td></tr><tr class="passedeven"><td><a href="#m2">orderHistoryTest</a></td><td rowspan="1">1776356804909</td><td rowspan="1">666</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Error validations Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">dikshasinha.tests.ErrorValidationTest</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1776356824590</td><td rowspan="1">50</td></tr><tr><th colspan="4">Error validations Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dikshasinha.tests.ErrorValidationTest</td><td><a href="#m4">loginErrorValidation</a></td><td rowspan="1">1776356809130</td><td rowspan="1">10229</td></tr><tr><th colspan="4">Error validations Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">dikshasinha.tests.ErrorValidationTest</td><td><a href="#m5">productErrorValidation</a></td><td rowspan="1">1776356809072</td><td rowspan="1">15319</td></tr><tr><th colspan="4">Error validations Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dikshasinha.tests.ErrorValidationTest</td><td><a href="#m6">productErrorValidation</a></td><td rowspan="1">1776356830087</td><td rowspan="1">3295</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dikshasinha.tests.TestSample</td><td><a href="#m0">myTest</a></td><td rowspan="1">1776592174123</td><td rowspan="1">251</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dikshasinha.tests.TestSample</td><td><a href="#m1">testSample</a></td><td rowspan="1">1776592174379</td><td rowspan="1">14</td></tr></tbody>
 </table>
-<h2>Submit Order</h2><h3 id="m0">dikshasinha.tests.SubmitOrderTest#loginAndaddtoCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{prod2=ZARA COAT 3, prod1=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">dikshasinha.tests.SubmitOrderTest#loginAndaddtoCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{prod2=ZARA COAT 3, prod1=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">dikshasinha.tests.SubmitOrderTest#orderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Error validations Test</h2><h3 id="m3">dikshasinha.tests.ErrorValidationTest#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;25.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8b5c01af30095ea45ff24df7ef12c51, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /var/folders/zr/r4xb7s195wn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52818}, goog:processID: 11143, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8b5c01af30095ea45ff24df7ef12c51
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:686)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:690)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:477)
-	at dikshasinha.TestComponents.BaseTest.tearDown(BaseTest.java:83)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">dikshasinha.tests.ErrorValidationTest#loginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: [class*=&apos;flyInOut&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class*=&apos;flyInOut&apos;]&quot;}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;25.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /var/folders/zr/r4xb7s195wn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52818}, goog:processID: 11143, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8b5c01af30095ea45ff24df7ef12c51
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at dikshasinha.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:33)
-	at dikshsinha.pageObjects.ProductCataloguePage.getErrorMsg(ProductCataloguePage.java:55)
-	at dikshasinha.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:17)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">dikshasinha.tests.ErrorValidationTest#productErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: .mb-3, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.mb-3&quot;}.
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;25.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /var/folders/zr/r4xb7s195wn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52818}, goog:processID: 11143, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8b5c01af30095ea45ff24df7ef12c51
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at dikshasinha.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:33)
-	at dikshsinha.pageObjects.ProductCataloguePage.getProductList(ProductCataloguePage.java:35)
-	at dikshsinha.pageObjects.ProductCataloguePage.getProductByName(ProductCataloguePage.java:40)
-	at dikshsinha.pageObjects.ProductCataloguePage.addProductToCart(ProductCataloguePage.java:48)
-	at dikshasinha.tests.ErrorValidationTest.productErrorValidation(ErrorValidationTest.java:26)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">dikshasinha.tests.ErrorValidationTest#productErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">dikshasinha.tests.TestSample#myTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void dikshasinha.tests.TestSample.myTest(java.lang.String,java.lang.String,int)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: myTest([java.lang.String arg0, java.lang.String arg1, int arg2])
+Arguments: [(java.lang.String) hello,(java.lang.String) text,(java.lang.String) 1.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dikshasinha.tests.TestSample#testSample</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
